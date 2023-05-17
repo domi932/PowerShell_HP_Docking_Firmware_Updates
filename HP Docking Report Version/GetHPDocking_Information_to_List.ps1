@@ -31,11 +31,11 @@ if ($global:DockingProductName -ne $null) {
             Write-Host("HP USB-C Dock G5")
             }
         "HP USB-C/A Universal Dock G2" {
-            $Output_Docking = "HP_Universal_Dock_G2" + $global:DockingVersion
+            $Output_Docking = "HP_Universal_Dock_G2" + "_" + $global:DockingVersion
             Write-Host("HP USB-C/A Universal Dock G2")            
             }
         "HP Thunderbolt Dock G4" {
-            $Output_Docking = "HP_Thunderbolt_Dock_G4" + $global:DockingVersion
+            $Output_Docking = "HP_Thunderbolt_Dock_G4" + "_" + $global:DockingVersion
             Write-Host("HP Thunderbolt Dock G4")            
             }
         Default {
