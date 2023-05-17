@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FirmwareCollectionPackage>
+    <Device>
+        <ProjectName>HP Thunderbolt Dock G4</ProjectName>
+        <VID>03F0</VID>
+        <PID>0488</PID>
+        <ResetAllowed>false</ResetAllowed>
+        <SetPackageAllowed>True</SetPackageAllowed>
+        <HideStageRadio>False</HideStageRadio>
+        <AllowedFirmwareUpdateMode>False</AllowedFirmwareUpdateMode>
+        <DetectPlatformForUpdateMode>False</DetectPlatformForUpdateMode>
+    </Device>
+</FirmwareCollectionPackage>

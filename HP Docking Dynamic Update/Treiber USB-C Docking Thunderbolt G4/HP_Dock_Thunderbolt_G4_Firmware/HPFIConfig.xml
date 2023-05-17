@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FirmwareCollectionPackage>
+	<Name>HP Thunderbolt Dock G4</Name>
+	<Type>Dock</Type>
+	<PackageVersion>1.4.16.0</PackageVersion>
+	<UpgradeCode>4089c769-a6cc-4c81-a52a-009fbd6a1777</UpgradeCode>
+	<InstallTime>15</InstallTime>
+	<PopupAllowed>True</PopupAllowed>
+	<Device>
+		<VID>03F0</VID>
+		<PID>0488</PID>
+		<Path86>Firmware\Cypress\HPUSBDock.dll</Path86>
+		<Path64>Firmware\Cypress\HPUSBDock64.dll</Path64>
+	</Device>
+	<Firmwares>
+		<Firmware>
+			<Path86>Firmware\Cypress\DockInstallerDll_x86.dll</Path86>
+			<Path64>Firmware\Cypress\DockInstallerDll_x64.dll</Path64>
+			<DisplayName>Controller Firmware Package</DisplayName>
+			  <Class>CyDevice1</Class>
+			<Version>1.4.16.0</Version>
+		</Firmware>
+	</Firmwares>
+</FirmwareCollectionPackage>

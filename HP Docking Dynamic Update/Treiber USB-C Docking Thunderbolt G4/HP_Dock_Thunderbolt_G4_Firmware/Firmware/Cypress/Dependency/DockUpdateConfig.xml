@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    log_option:
+        This value determine logging level of exe.
+        exe logs are stored in a file in appdata which can be used for debugging.
+        Available options are s, q and v
+    filepath:
+        Relative path to the composite image. Relative to DLL file.
+    vid:
+        VID of the DMC controller in hex
+    pid:
+        PID of the DMC controller in hex
+    re_enum_timeout:
+        Wait time (in milli seconds) used by exe between re-enumeration of device when device reset during fw update
+-->
+<DockUpdateConfigure
+    log_option="v"
+    filepath="CY7C65219-40LQXI_dock_config.xml_OUT.bin"
+    
+    vid="0x03F0"
+    pid="0x0488"
+    re_enum_timeout="1020000"
+    />
