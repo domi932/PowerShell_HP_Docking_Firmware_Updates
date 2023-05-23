@@ -1,0 +1,69 @@
+Tool: HPFirmwareInstaller, Version V2.2.18.1
+Package: One Click Installer For HP USB-C Dock G5 Dock, Version V1.0.18.0
+
+Change note:
+
+	1.Update Power Delivery Controller Firmware version to 1.2.33.
+	-Fix issue where Lan power didn't bring back after a hardreset.
+
+Driver-requisites:
+	- N/A
+
+Pre-requisites:
+	- N/A
+
+User Installation Notes:
+	The HP Firmware Installer release consists of an SDK that is provided to firmware vendors that allows them to create HP-Firmware-Installer-compliant DLLs.
+Usage:
+	Language:
+		
+		English(US)
+
+	HPFirmwareInstaller.exe [option]
+    
+	Options:
+		Non-Interactive			-ni
+		Silent mode			-s		    		
+		Force				-f	
+		Check 				-C	    		 
+		Configuration File Path		-configPath:<file path> 	
+		Install Log File Path		-VinstallLogPath:<file path>\<Log Name>.txt
+	
+	Logging:
+		To turn on debug logging, add the following key to the registry:
+		HKEY_LOCAL_MACHINE\SOFTWARE\Policies\HP\HP Firmware Installer
+
+		Then add to that key the following string values:
+		Name: LoggingType   Data: File
+		Name: MinLogLevel   Data: TraceIn
+
+		The debug logs will appear in the following files:
+		%APPDATA%\hpqLog\HPFirmwareController.log
+		%APPDATA%\hpqLog\HPFirmwareInstaller.log
+				 		   		
+	Return Codes:
+
+		echo %errorlevel% - Standard windows way to display return codes
+
+		0 = success
+
+		- or -
+
+		A bitmask containing one or more of the following:
+
+		101 - Install Failed. One or more firmware failed to install.
+		102 - Configuration file failed to be loaded. This may be because it could not be found or that it was not properly formatted.
+		103 - One or more firmware packages specified in the configuration file could not be loaded.
+		104 - No devices could be communicated with. This could be because the device was not connected or necessary drivers are missing to detect the device.
+		105 - Out-of-date firmware detected when running with 'check' flag.
+		106 - An instance of HP Firmware Installer is already running
+		107 - Device not connected
+		108 - Force option disabled. Firmware downgrade or re-flash not possible on this device.
+
+Installed Firmware version:
+
+	Name						Version
+	------------------------------------------------------------
+	Dock Management Controller			1.4.30
+	Power Delivery Controller			1.2.33
+	Docking Graphic Controller			05.06.001

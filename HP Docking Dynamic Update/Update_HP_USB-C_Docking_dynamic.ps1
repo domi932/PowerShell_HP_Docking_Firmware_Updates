@@ -28,11 +28,11 @@ function Update-HP_Docking{
         switch ($global:DockingProductName)
         {
             "HP USB-C Dock G5" {
-                $CurrentVersionG5 = "1.1.18.0"
+                $CurrentVersionG5 = "1.0.18.0"
                 if ([System.Version]$global:DockingVersion -lt [System.Version]$CurrentVersionG5){
                     write-host("Dockingstation: " + $global:DockingProductName)
                     Write-Host("Current Version: " + $global:DockingVersion)
-                    Start-Process -Wait -FilePath "$PSScriptRoot\Treiber USB-C Docking G5\HP_USB-C_Docking_G5_Firmware_1.1.18.0\HPFirmwareInstaller.exe" -ArgumentList "-s"
+                    Start-Process -Wait -FilePath "$PSScriptRoot\Treiber USB-C Docking G5\HP_USB-C_Docking_G5_Firmware_1.0.18.0\HPFirmwareInstaller.exe" -ArgumentList "-s"
                     HP_Docking_Info
                     write-host("Dockingstation has been updated.")
                     write-host("Dockingstation: " + $global:DockingProductName)
