@@ -16,8 +16,7 @@ function Get-HP_Docking_Info{
 
     $global:DockingProductName = Get-WmiObject -Class $classname -Namespace $namespace | Select-Object -expandproperty ProductName
     $global:DockingVersion = Get-WmiObject -Class $classname -Namespace $namespace | Select-Object -expandproperty firmwarepackageversion
-
-    $Dockin1 = Get-WmiObject -Class $classname -Namespace $namespace 
+ 
     }
 #endregion
 

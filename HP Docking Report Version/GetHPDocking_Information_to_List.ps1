@@ -63,4 +63,3 @@ Start-Sleep -Seconds 5
 $user | Add-Content -path $filepath
 
 Write-Host($output)
-#Start-Sleep -Seconds 15
